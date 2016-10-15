@@ -1,0 +1,10 @@
+clear;
+clc;
+close all;
+A = imread('images/binary/shape3.png');
+A = A(:,:,1);
+B = imread('images/binary/conv.png');
+B = B(:,:,1);
+imcrop(A);
+%intersect = bitand(A,B);
+%figure, imshow(intersect);
